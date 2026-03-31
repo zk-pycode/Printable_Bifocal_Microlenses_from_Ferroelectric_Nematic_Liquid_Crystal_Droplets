@@ -38,7 +38,7 @@ JonesMatrix_POM/
     └── pom_generator.py  	Pipeline orchestrator (run_pom_pipeline)
 ```
 
-### Output (written inside the simulation directory)
+## Output (written in simulation directory)
 ```bash ...
 <simulation_dir>/POM_output/
 ├── POM_images/
@@ -58,7 +58,7 @@ JonesMatrix_POM/
 1. Edit the simulation directory and optical parameters : nano params_JPOM.py
 2. Run : python main_JPOM.py
 
-## Dependencies and versions
+### Dependencies and versions
 
 | Package      | Minimum version | Purpose                                          |
 |--------------|-----------------|--------------------------------------------------|
