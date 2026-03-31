@@ -23,7 +23,7 @@ FEniCSx/DOLFINx finite-element simulation.
 ---
 
 ## Project structure
-"""
+```bash ...
 JonesMatrix_POM/
 ├── main_JPOM.py          	Entry point — instantiates params, calls pipeline
 ├── params_JPOM.py        	All user-configurable settings (edit this file)
@@ -36,7 +36,7 @@ JonesMatrix_POM/
     ├── debug_plots.py    	Diagnostic visualisation (thickness profile, director layers)
     ├── jones_calculus.py 	Numba-JIT Jones matrix physics kernels
     └── pom_generator.py  	Pipeline orchestrator (run_pom_pipeline)
-"""
+```
 
 ### Output (written inside the simulation directory)
 """
