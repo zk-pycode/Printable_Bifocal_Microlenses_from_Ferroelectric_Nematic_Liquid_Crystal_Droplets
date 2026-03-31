@@ -1,4 +1,4 @@
-### JonesMatrix_POM
+## JonesMatrix_POM
 
 Polarized Optical Microscopy (POM) image generator using layer-by-layer
 Jones matrix calculus on a 3-D liquid-crystal director field from a
@@ -6,7 +6,7 @@ FEniCSx/DOLFINx finite-element simulation.
 
 ---
 
-## What it does
+## How it works
 
 1. Reads a DOLFINx HDF5 checkpoint (simulation_P.h5) containing mesh
    coordinates and a 3-component director (or polarization) field.
@@ -23,7 +23,7 @@ FEniCSx/DOLFINx finite-element simulation.
 ---
 
 ## Project structure
-
+"""
 JonesMatrix_POM/
 ├── main_JPOM.py          	Entry point — instantiates params, calls pipeline
 ├── params_JPOM.py        	All user-configurable settings (edit this file)
@@ -36,10 +36,10 @@ JonesMatrix_POM/
     ├── debug_plots.py    	Diagnostic visualisation (thickness profile, director layers)
     ├── jones_calculus.py 	Numba-JIT Jones matrix physics kernels
     └── pom_generator.py  	Pipeline orchestrator (run_pom_pipeline)
-
+"""
 
 ### Output (written inside the simulation directory)
-
+"""
 <simulation_dir>/POM_output/
 ├── POM_images/
 │   ├── frame_000.png     	POM frame at polarizer angle 0°
@@ -50,16 +50,13 @@ JonesMatrix_POM/
     ├── height_contour_map.png      	Droplet height profile with contours
     ├── thickness_profile_colored.png   Radial profile colored by retardation
     └── layer_NN_zXX.Xum.png        	Director field at z-slice NN  (if n_debug_layers > 0)
-
+"""
 ---
 
 ## Quick start
 
-# 1. Edit the simulation directory and optical parameters
-nano params_JPOM.py
-
-# 2. Run
-python main_JPOM.py
+1. Edit the simulation directory and optical parameters : nano params_JPOM.py
+2. Run : python main_JPOM.py
 
 ## Dependencies and versions
 
@@ -84,8 +81,7 @@ python main_JPOM.py
 
 | File             | Location  |                                                                         |
 |------------------|-----------|-------------------------------------------------------------------------|
-| ciexyz31_1.csv   | src_func/ | CIE 1931 2° standard observer color-matching functions (360–830 nm,     |
-				 1 nm steps). Columns: wavelength, x̄, ȳ, z̄. 				 |
+| ciexyz31_1.csv   | src_func/ | CIE 1931 2° standard observer color-matching functions (360–830 nm, 1 nm steps). Columns: wavelength, x̄, ȳ, z.	|
 
 ---
 
