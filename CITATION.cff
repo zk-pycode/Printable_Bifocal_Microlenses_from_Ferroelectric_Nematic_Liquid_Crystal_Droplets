@@ -1,32 +1,38 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite it as below."
 authors:
-- family-names: "Lisa"
-  given-names: "Mona"
+- family-names: "Talwar"
+  given-names: "Manisha"
   orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Bot"
-  given-names: "Hew"
+- family-names: "Siddiquee"
+  given-names: "Zakaria"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Jákli"
+  given-names: "Antal"
   orcid: "https://orcid.org/0000-0000-0000-0000"
 title: "My Research Software"
 version: 2.0.4
-doi: 10.5281/zenodo.1234
+doi: 10.0000/zenodo.0000
 date-released: 2017-12-18
-url: "https://github.com/github-linguist/linguist"
+url: "https://github.com/zk-pycode/Printable_Bifocal_Microlenses_from_Ferroelectric_Nematic_Liquid_Crystal_Droplets"
 preferred-citation:
   type: article
   authors:
-  - family-names: "Lisa"
-    given-names: "Mona"
+  - family-names: "Talwar"
+    given-names: "Manisha"
     orcid: "https://orcid.org/0000-0000-0000-0000"
-  - family-names: "Bot"
-    given-names: "Hew"
+  - family-names: "Siddiquee"
+    given-names: "Zakaria"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Jákli"
+    given-names: "Antal"
     orcid: "https://orcid.org/0000-0000-0000-0000"
   doi: "10.0000/00000"
   journal: "Journal Title"
   month: 9
   start: 1 # First page number
   end: 10 # Last page number
-  title: "My awesome research software"
+  title: "Printable Bifocal Microlenses from Ferroelectric Nematic Liquid Crystal Droplets"
   issue: 1
   volume: 1
-  year: 2021
+  year: 2026
